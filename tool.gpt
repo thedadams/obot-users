@@ -9,6 +9,7 @@ Param: end: The end date and time of the period to get daily active users for in
 
 ---
 Name: context
+Type: context
 
 #!sys.echo
 All users returned were active in the time range that you supplied; ignore the "lastActiveDay" field because that only says when the user was last active and not if they were active on a given day.
