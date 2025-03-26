@@ -1,10 +1,17 @@
 Name: Get Obot Daily Active Users
 Credential: obot-token as obot-token
+Tools: context
 Description: Get the daily active users for the Obot platform. To get the daily active users for a time range, make one tool call for each day in the range. Always use UTC.
 Param: start: The start date and time of the period to get daily active users for in ISO 8601 format
 Param: end: The end date and time of the period to get daily active users for in ISO 8601 format
 
 #!/usr/bin/env python3 ${GPTSCRIPT_TOOL_DIR}/main.py
+
+---
+Name: context
+
+#!sys.echo
+All users returned were active in the time range that you supplied; ignore the "lastActiveDay" field because that only says when the user was last active and not if they were active on a given day.
 
 ---
 Name: obot-token
