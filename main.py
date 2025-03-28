@@ -8,8 +8,6 @@ from uuid import uuid4
 
 import pytz
 import requests
-from gptscript.gptscript import GPTScript
-from gptscript.opts import Options
 
 
 async def main():
